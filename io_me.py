@@ -24,21 +24,21 @@ def filter_sentences():
         return
  
     # Split the content into sentences based on period ('.') as the delimiter
-    sentences = content.split('.')
+    sentences = content.split('\n')
  
     # Filter sentences based on the criteria and save them in separate files
     short_sentences = [sentence for sentence in sentences if len(sentence.strip()) < 30]
-    articles_sentences = [sentence for sentence in sentences if sentence.strip().startswith(('Der', 'Die', 'Das'))]
+    articles_sentences = [sentence for sentence in sentences if sentence.strip().startswith(('Der ', 'Die ', 'Das '))]
     april_sentences = [sentence for sentence in sentences if 'April' in sentence]
  
     # Save the filtered sentences in separate files
-    with open('short.txt', 'w') as file:
+    with open('short.txt', 'w', encoding='utf-8') as file:
         file.write('\n'.join(short_sentences))
  
-    with open('articles.txt', 'w') as file:
+    with open('articles.txt', 'w', encoding='utf-8') as file:
         file.write('\n'.join(articles_sentences))
  
-    with open('april.txt', 'w') as file:
+    with open('april.txt', 'w', encoding='utf-8') as file:
         file.write('\n'.join(april_sentences))
  
 # Call the function to filter sentences and create the output files
