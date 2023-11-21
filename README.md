@@ -8,7 +8,7 @@ This is the fourth exercise, and it is concerned with input/output, exceptions a
 Clone this repository to your local computer. On the command line, you would use the following command: `git clone https://github.com/IDH-Cologne-Deep-Learning-Uebung/exercise-04`.
 
 ## Step 2
-Create a new branch in the repository, named after your UzK-account: `git checkout -b "UZKACCOUNT"`
+Create a new  in the repository, named after your UzK-account: `git checkoubrancht -b "UZKACCOUNT"`
 
 ## Step 3: IO
 Write a new python script called `io.py`. The script reads in the file `wiki.txt`, which contains 10000 randomly selected sentences from the German Wikipedia. The script then filters the sentences, and produces three output files: 
